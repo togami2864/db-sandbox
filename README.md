@@ -1,6 +1,7 @@
-The simple postgres sandbox for my local development
+The simple mysql, postgres sandbox for my local development
 
-### build
+### Up
+setup all database
 ```sh
 $ docker-compose up -d
 ```
@@ -8,4 +9,14 @@ $ docker-compose up -d
 ### down
 ```sh
 $ docker-compose down
+```
+
+### Only MySql
+```sh
+$ docker-compose up -d mysql
+```
+
+### Only Postgres
+```sh
+$ docker-compose up -d postgres
 ```

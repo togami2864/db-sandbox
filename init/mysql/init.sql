@@ -1,3 +1,5 @@
+CREATE DATABASE test;
+USE test;
 CREATE TABLE test (
     id integer UNIQUE,
     name text
