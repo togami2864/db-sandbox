@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: "sandbox"
+    build: ./postgres
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    ports:
+      - "5432:5432"
+    volumes:
+      - database:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d
+
+volumes:
+  database:
+    driver: local
