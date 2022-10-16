@@ -6,3 +6,4 @@ CREATE TABLE test (
 
 INSERT INTO test(id, name) VALUES (1, 'next');
 INSERT INTO test(id, name) VALUES (2, 'nuxt');
+INSERT INTO test(id, name) VALUES (3, 'astro');
